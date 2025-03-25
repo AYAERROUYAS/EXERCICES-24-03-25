@@ -1,4 +1,5 @@
-### EXERCICE 1
+EXERCICE 1
+
 ´´´´
 def verifie(tableau):
   for i in range(len(tableau) - 1):
@@ -19,3 +20,14 @@ def verifie_date(L):
       return False
     else:
       return True
+
+Exercice 2
+Urne = ['A', 'A', 'A', 'B', 'C', 'B', 'C', 'B', 'C', 'B']
+print(Urne.count('A'))
+def depuille(L):
+  d=dict()
+  for e in L:
+    if e not in d:
+      d[e]=Urne.count(e)
+  return d
+depuille(Urne)
